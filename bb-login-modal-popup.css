@@ -1,0 +1,97 @@
+/* Custom CSS Style IE Warning Start */
+
+.box-hidden {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.popup-dialog {
+  z-index: 6;
+	background-color: #45166D;
+	color: #ffffff;
+	text-align: left;
+	width: 100%;
+	/*max-width: 400px;*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-bottom: 5px solid #C1D82F;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+}
+
+#popup-dialog-title {
+	font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 250%;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+
+@keyframes fade-in {
+	0%   {opacity: 0.0;}
+	25%  {opacity: 0.25;}
+	50%  {opacity: 0.5;}
+	75%  {opacity: 0.75;}
+	100% {opacity: 1.0;}
+  }
+
+.popup-close-dialog {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 20px;
+	padding-top: 10px;
+	font-size: x-large;
+	background-color: #45166D;
+	border: none;
+	color: white;
+	text-align: center;  
+  }
+
+.sr-only {
+	opacity: 0;
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+#popup-dialog-description {
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 120%;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    line-height: 1.8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.browb-row {
+  text-align: center;
+}
+
+.browb-column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.browb-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Custom CSS Style IE Warning End */
